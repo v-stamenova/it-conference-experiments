@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="grid grid-cols-1 gap-4">
-
+                    @livewire('chat')
                 </div>
             </div>
         </div>
