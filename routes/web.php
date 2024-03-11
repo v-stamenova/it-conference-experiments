@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,5 +23,8 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+Route::get('messages', [MessageController::class, 'index'])->name('messages.index');
+Route::get('messages/{user}', [MessageController::class, 'show'])->name('messages.show');
 
 require __DIR__.'/auth.php';
