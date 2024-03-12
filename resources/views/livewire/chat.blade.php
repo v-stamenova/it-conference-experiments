@@ -1,4 +1,4 @@
-<div>
+<div wire:poll.5s>>
     <div>
         @foreach ($messages as $message)
             <div>
